@@ -32,8 +32,8 @@ this project I'm proudest of.
 | Model comparison (5 algorithms) | Final processed image of M31 |   
 
 **What's inside `final-project/`:**
-- `report.pdf` — full write-up (theoretical derivations, ML pipeline, astrophotography workflow)
-- `notebook.ipynb` — Colab notebook: EDA → imbalance handling → feature engineering → model tuning → evaluation
+- `document.pdf` — full write-up (theoretical derivations, ML pipeline, astrophotography workflow)
+- `final-project.ipynb` — Colab notebook: EDA → imbalance handling → feature engineering → model tuning → evaluation
 - `figures/` — key plots (correlation heatmap, boxplots, ROC comparison)
 - `andromeda_final.png` — final M31 image, stacked (DeepSkyStacker) → calibrated & stretched (Siril) → denoised (GIMP)
 
