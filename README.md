@@ -54,10 +54,10 @@ Colab notebook analysis on [describe the dataset/task briefly].
 
 [One or two sentences on the task and approach.]
 
-**Result:** [leaderboard rank / score, if known]
+**Result:** Rank 39, with score of 1.00000
 
 - `week-4-kaggle/notebook.ipynb`
-- [Live Kaggle notebook →](#) *(replace with your link)*
+- [Live Kaggle notebook →](https://www.kaggle.com/code/shanky3140/notebook5c7fa3c46e)
 
 ---
 
