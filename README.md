@@ -1,4 +1,4 @@
-# Astronomy 101 (AE-0255) — Equinox
+# Astronomy 101 (AE-0918) — Equinox
 
 A semester of coursework spanning statistical modeling on real NASA
 satellite data, a Kaggle competition, and hands-on astrophotography —
