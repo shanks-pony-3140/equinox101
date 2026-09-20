@@ -28,7 +28,7 @@ this project I'm proudest of.
 
 | | |
 |---|---|
-| ![ROC curves](final-project/figures/roc_curves.png) | ![M31 final](final-project/andromeda_final.png) |
+| ![ROC curves](final-project/figures/ROC_curves.png) | ![M31 final](final-project/andromeda_final.png) |
 | Model comparison (5 algorithms) | Final processed image of M31 |
 
 **What's inside `final-project/`:**
