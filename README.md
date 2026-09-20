@@ -45,8 +45,8 @@ this project I'm proudest of.
 
 Colab notebook analysis on [describe the dataset/task briefly].
 
-- `week-2/Equinox_Week_2.ipynb`
-- `week-3/Equinox_Week_3.ipynb`
+- `week2/Equinox_Week_2.ipynb`
+- `week3/Equinox_Week_3.ipynb`
 
 ---
 
@@ -56,7 +56,7 @@ Colab notebook analysis on [describe the dataset/task briefly].
 
 **Result:** Rank 39, with score of 1.00000
 
-- `week-4-kaggle/notebook.ipynb`
+- `week4/notebook.ipynb`
 - [Live Kaggle notebook →](https://www.kaggle.com/code/shanky3140/notebook5c7fa3c46e)
 
 ---
