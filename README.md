@@ -56,7 +56,7 @@ Colab notebook analysis on [describe the dataset/task briefly].
 
 **Result:** Rank 39, with score of 1.00000
 
-- `week4/notebook.ipynb`
+- `week4/week4latest.ipynb`
 - [Live Kaggle notebook →](https://www.kaggle.com/code/shanky3140/notebook5c7fa3c46e)
 
 ---
@@ -66,14 +66,14 @@ Colab notebook analysis on [describe the dataset/task briefly].
 ```
 .
 ├── final-project/
-│   ├── report.pdf
-│   ├── notebook.ipynb
+│   ├── document.pdf
+│   ├── final-project.ipynb
 │   ├── figures/
 │   └── andromeda_final.png
 ├── week-2/
-│   └── notebook.ipynb
+│   └── Equinox_Week_2.ipynb
 ├── week-3/
-│   └── notebook.ipynb
+│   └── Equinox_Week_2.ipynb
 └── week-4-kaggle/
-    └── notebook.ipynb
+    └── week4latest.ipynb
 ```
