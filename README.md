@@ -45,8 +45,8 @@ this project I'm proudest of.
 
 Colab notebook analysis on [describe the dataset/task briefly].
 
-- `week-2/notebook.ipynb`
-- `week-3/notebook.ipynb`
+- `week-2/Equinox_Week_2.ipynb`
+- `week-3/Equinox_Week_3.ipynb`
 
 ---
 
