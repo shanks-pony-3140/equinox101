@@ -28,8 +28,8 @@ this project I'm proudest of.
 
 | | |
 |---|---|
-| ![ROC curves](final-project/figures/ROC_curves.png) | ![M31 final](final-project/andromeda_final.png) |
-| Model comparison (5 algorithms) | Final processed image of M31 |
+| <img src="final-project/andromeda_final.png" width="30%"> | <img src="final-project/figures/ROC_curves.png" width="65%"> |   
+| Final processed image of M31 | Model comparison (5 algorithms) |
 
 **What's inside `final-project/`:**
 - `report.pdf` — full write-up (theoretical derivations, ML pipeline, astrophotography workflow)
