@@ -70,10 +70,10 @@ Colab notebook analysis on [describe the dataset/task briefly].
 │   ├── final-project.ipynb
 │   ├── figures/
 │   └── andromeda_final.png
-├── week-2/
+├── week2/
 │   └── Equinox_Week_2.ipynb
-├── week-3/
+├── week3/
 │   └── Equinox_Week_2.ipynb
-└── week-4-kaggle/
+└── week4/
     └── week4latest.ipynb
 ```
