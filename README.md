@@ -1,7 +1,7 @@
-# Astronomy 101 (AE-0918) — Equinox
+# Astronomy 101 (AE-0918) - Equinox
 
 A semester of coursework spanning statistical modeling on real NASA
-satellite data, a Kaggle competition, and hands-on astrophotography —
+satellite data, a Kaggle competition, and hands-on astrophotography -
 culminating in a final project that combines machine learning,
 LaTeX report writing, and deep-sky image processing.
 
@@ -17,11 +17,11 @@ astrophotography of the Andromeda Galaxy (M31).
 Tree, Random Forest, AdaBoost, Gradient Boosting, XGBoost) to predict
 M5+ solar flares from NASA SDO magnetogram data (SHARP parameters).
 The final XGBoost model achieved **F1 = 0.967, PR-AUC = 0.993** on a
-validation split — but evaluation on a genuinely held-out, temporally
+validation split - but evaluation on a genuinely held-out, temporally
 later test period revealed a **near-total performance collapse
 (ROC-AUC ≈ 0.50)**, traced to a real distribution shift: active
 regions in the test period were systematically weaker across nearly
-every energy/current feature, even among confirmed flares — plausibly
+every energy/current feature, even among confirmed flares - plausibly
 tied to the solar activity cycle. Diagnosing *why* a well-validated
 model fails, rather than only reporting that it works, is the part of
 this project I'm proudest of.
@@ -32,10 +32,10 @@ this project I'm proudest of.
 | Model comparison (5 algorithms) | Final processed image of M31 |
 
 **What's inside `final-project/`:**
-- `document.pdf` — full write-up (theoretical derivations, ML pipeline, astrophotography workflow)
-- `final-project.ipynb` — Colab notebook: EDA → imbalance handling → feature engineering → model tuning → evaluation
-- `figures/` — key plots (correlation heatmap, boxplots, ROC comparison)
-- `andromeda_final.png` — final M31 image, stacked (DeepSkyStacker) → calibrated & stretched (Siril) → denoised (GIMP)
+- `document.pdf` - full write-up (theoretical derivations, ML pipeline, astrophotography workflow)
+- `final-project.ipynb` - Colab notebook: EDA → imbalance handling → feature engineering → model tuning → evaluation
+- `figures/` - key plots (correlation heatmap, boxplots, ROC comparison)
+- `andromeda_final.png` - final M31 image, stacked (DeepSkyStacker) → calibrated & stretched (Siril) → denoised (GIMP)
 
 **Tech stack:** Python, pandas, scikit-learn, XGBoost, imbalanced-learn, matplotlib/seaborn, LaTeX, DeepSkyStacker, Siril, GIMP
 
@@ -47,7 +47,7 @@ Built a Linear Regression model predicting a star's luminosity from
 its temperature, radius, and absolute magnitude (2,000-star dataset).
 
 - Split 80/20 train/test, fit `LinearRegression`, evaluated with MAE, MSE, and R².
-- **Result: R² = 0.567** — the model captures the general trend (luminosity scaling with temperature and radius) but leaves meaningful scatter unexplained, consistent with luminosity's steep, non-linear dependence on temperature (∝T⁴) that a purely linear model can't fully capture.
+- **Result: R² = 0.567** - the model captures the general trend (luminosity scaling with temperature and radius) but leaves meaningful scatter unexplained, consistent with luminosity's steep, non-linear dependence on temperature (∝T⁴) that a purely linear model can't fully capture.
 
 - `week2/Equinox_Week_2.ipynb`
 
@@ -69,14 +69,14 @@ Gaussian Naive Bayes, and SVM.
 
 **Result:** SVM performed best across every metric. Confusion matrices
 showed Spiral and Irregular galaxies were most often confused with
-each other — both classes share overlapping structural features in
-this dataset — while Elliptical galaxies were reliably distinguished.
+each other - both classes share overlapping structural features in
+this dataset - while Elliptical galaxies were reliably distinguished.
 
 - `week3/Equinox_Week_3.ipynb`
 
 ---
 
-## 🏆 Week 4: Kaggle — Exoplanet Detection Challenge
+## 🏆 Week 4: Kaggle - Exoplanet Detection Challenge
 
 Built a stacked ensemble (XGBoost + LightGBM + Random Forest) to
 detect exoplanet transits from 9,000 labeled stellar observations
@@ -85,7 +85,7 @@ stratified cross-validation.
 
 - Addressed class imbalance (6,877 negative : 2,123 positive, ratio ≈ 3.24) via `scale_pos_weight`.
 - Removed known label-leaking features (orbital/planetary parameters directly derived from the transit signal) before training.
-- **Result: ensemble out-of-fold accuracy ≈ 1.00**, matching most of the leaderboard (score ties broken on later decimal places) — final leaderboard rank: **39th**.
+- **Result: ensemble out-of-fold accuracy ≈ 1.00**, matching most of the leaderboard (score ties broken on later decimal places) - final leaderboard rank: **39th**.
 
 - `week4/week4latest.ipynb`
 - [Live Kaggle notebook →](https://www.kaggle.com/code/shanky3140/notebook5c7fa3c46e)
