@@ -29,7 +29,7 @@ this project I'm proudest of.
 | | |
 |---|---|
 | <img src="final-project/figures/ROC_curves.png" style="height:300px; width:auto; display:block; margin:auto;"> | <img src="final-project/andromeda_final.png" style="height:300px; width:auto; display:block; margin:auto;"> |
-| Model comparison (5 algorithms) | Final processed image of M31 |   
+| Model comparison (5 algorithms) | Final processed image of M31 |
 
 **What's inside `final-project/`:**
 - `document.pdf` — full write-up (theoretical derivations, ML pipeline, astrophotography workflow)
@@ -41,20 +41,51 @@ this project I'm proudest of.
 
 ---
 
-## 📊 Week 2–3: [Add topic here]
+## 📊 Week 2: Predicting Stellar Luminosity
 
-Colab notebook analysis on [describe the dataset/task briefly].
+Built a Linear Regression model predicting a star's luminosity from
+its temperature, radius, and absolute magnitude (2,000-star dataset).
+
+- Split 80/20 train/test, fit `LinearRegression`, evaluated with MAE, MSE, and R².
+- **Result: R² = 0.567** — the model captures the general trend (luminosity scaling with temperature and radius) but leaves meaningful scatter unexplained, consistent with luminosity's steep, non-linear dependence on temperature (∝T⁴) that a purely linear model can't fully capture.
 
 - `week2/Equinox_Week_2.ipynb`
+
+---
+
+## 🌌 Week 3: Galaxy Classification Challenge
+
+Classified 750 synthetic galaxies into Spiral, Elliptical, or Irregular
+types from measured physical features (brightness, size, ellipticity,
+concentration index, star formation rate, etc.), comparing KNN,
+Gaussian Naive Bayes, and SVM.
+
+| Model | Accuracy | Precision | Recall | F1 |
+|---|---|---|---|---|
+| KNN (k=3) | 0.92 | 0.92 | 0.92 | 0.92 |
+| KNN (k=7) | 0.94 | 0.94 | 0.94 | 0.94 |
+| Gaussian NB | 0.95 | 0.95 | 0.95 | 0.95 |
+| **SVM** | **0.96** | **0.96** | **0.96** | **0.96** |
+
+**Result:** SVM performed best across every metric. Confusion matrices
+showed Spiral and Irregular galaxies were most often confused with
+each other — both classes share overlapping structural features in
+this dataset — while Elliptical galaxies were reliably distinguished.
+
 - `week3/Equinox_Week_3.ipynb`
 
 ---
 
-## 🏆 Week 4: Kaggle Challenge — [Add competition name]
+## 🏆 Week 4: Kaggle — Exoplanet Detection Challenge
 
-[One or two sentences on the task and approach.]
+Built a stacked ensemble (XGBoost + LightGBM + Random Forest) to
+detect exoplanet transits from 9,000 labeled stellar observations
+(27 features: stellar and orbital parameters), evaluated via 10-fold
+stratified cross-validation.
 
-**Result:** Rank 39, with score of 1.00000
+- Addressed class imbalance (6,877 negative : 2,123 positive, ratio ≈ 3.24) via `scale_pos_weight`.
+- Removed known label-leaking features (orbital/planetary parameters directly derived from the transit signal) before training.
+- **Result: ensemble out-of-fold accuracy ≈ 1.00**, matching most of the leaderboard (score ties broken on later decimal places) — final leaderboard rank: **39th**.
 
 - `week4/week4latest.ipynb`
 - [Live Kaggle notebook →](https://www.kaggle.com/code/shanky3140/notebook5c7fa3c46e)
@@ -73,7 +104,7 @@ Colab notebook analysis on [describe the dataset/task briefly].
 ├── week2/
 │   └── Equinox_Week_2.ipynb
 ├── week3/
-│   └── Equinox_Week_2.ipynb
+│   └── Equinox_Week_3.ipynb
 └── week4/
     └── week4latest.ipynb
 ```
