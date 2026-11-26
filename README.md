@@ -1,6 +1,6 @@
 # Astronomy 101 (AE-0918) - Equinox
 
-A semester of coursework spanning statistical modeling on real NASA
+A summer 4-week course spanning statistical modeling on real NASA
 satellite data, a Kaggle competition, and hands-on astrophotography -
 culminating in a final project that combines machine learning,
 LaTeX report writing, and deep-sky image processing.
